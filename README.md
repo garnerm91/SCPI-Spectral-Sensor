@@ -11,6 +11,7 @@ A RP2040-based project for a spectral sensor that responds to SCPI commands via 
 
 ## Dependencies
 Mbed RP2040 core 
+
 Adafruit_AS726x
 ## Commands
 *IDN? -identify. Returns the SN, which is also the last byte of the MAC 
@@ -21,5 +22,7 @@ TEMP? -Reads the internal temp of the RP2040 returns in C
 
 SYS XX -sets the last byte of the MAC address/SN based on the bit value of the byte(in ASCII) you send it. Don't change this often. Should be a setup-only task.
 
+## Troubleshooting
+The serial port via USB will print the IP Address at init. It will also print if it can't find one of the spectral sensors. The serial is running at 9600 Baud. The serial port does not respond to commands. The socket server is on port 5024.
 
 ![PCB](IMG20250424062745.jpg)
