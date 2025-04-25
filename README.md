@@ -10,8 +10,12 @@ Mbed RP2040 core
 Adafruit_AS726x
 ## Commands
 *IDN? -identify. Returns the SN, which is also the last byte of the MAC 
+
 Color? X -responds with the color data (X=0,1,2). Each color is delimited by a comma ",". Colors are in this order: Violet (450nm), Blue (500nm), Green (550nm), Yellow (570nm), Orange (600nm),Red (650nm)
+
 Temp? -Reads the internal temp of the RP2040 returns in C
+
 SYS XX -sets the last byte of the MAC address/SN based on the bit value of the byte(in ASCII) you send it. Don't change this often. Should be a setup-only task.
+
 
 ![PCB](IMG20250424062745.jpg)
